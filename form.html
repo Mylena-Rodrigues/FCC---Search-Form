@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="form-container">
+      <header>
+        <h1 id="title">FORM</h1>
+        <p id="description">New form</p>
+      </header>
+      <form id="survey-form">
+        <div class="survey-form-content-inputs">
+          <div class="label-float">
+            <label for="name" id="name-label"> Name</label>
+            <input type="text" name="name" id="name" placeholder="Name" />
+          </div>
+          <div class="label-float">
+            <label for="email" id="email-label"> E-mail</label>
+            <input type="email" name="email" id="email" placeholder="E-mail" />
+          </div>
+        </div>
+        <div class="survey-form-content-line">
+          <div class="label-float left-content-line">
+            <label for="number" id="number-label"> Number</label>
+            <input
+              type="number"
+              min="0"
+              max="100"
+              name="number"
+              id="number"
+              placeholder="Number"
+            />
+          </div>
+          <div class="label-float right-content-line">
+            <label for="dropdown" id="dropdown-label"> Options </label>
+            <select name="dropdown" id="dropdown">
+              <option value="0">Option 0</option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="survey-form-content-radio">
+          <h4>Favorite part</h4>
+          <div class="survey-form-content-radio-options">
+            <input type="radio" id="html" name="fav_language" value="HTML" />
+            <label for="html">HTML</label><br />
+            <input type="radio" id="css" name="fav_language" value="CSS" />
+            <label for="css">CSS</label><br />
+            <input
+              type="radio"
+              id="javascript"
+              name="fav_language"
+              value="JavaScript"
+            />
+            <label for="javascript">JavaScript</label>
+          </div>
+        </div>
+        <div class="survey-form-content-checkbox">
+          <h4>Favorite type</h4>
+          <div class="survey-form-content-checkbox-options">
+            <input
+              type="checkbox"
+              id="type-one"
+              name="type-one"
+              value="type-one"
+            />
+            <label for="type-one">Type 1</label><br />
+            <input
+              type="checkbox"
+              id="type-two"
+              name="type-two"
+              value="type-two"
+            />
+            <label for="type-two">Type 2</label><br />
+            <input
+              type="checkbox"
+              id="type-three"
+              name="type-three"
+              value="type-three"
+            />
+            <label for="type-three">Type 3</label>
+          </div>
+        </div>
+        <div class="survey-form-content-textarea">
+          <label for="comment"> Add comment</label>
+          <textarea
+            type="textarea"
+            id="comment"
+            name="comment"
+            placeholder="Add some comment here..."
+          >
+          </textarea>
+        </div>
+        <button type="submit" id="submit">Send Information</button>
+      </form>
+    </div>
+  </body>
+</html>
