@@ -1,0 +1,189 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container {
+  border-radius: 20px;
+  max-width: 500px;
+  min-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  box-shadow: -1px 5px 21px 0px rgba(0, 0, 0, 0.36);
+  -webkit-box-shadow: -1px 5px 21px 0px rgba(0, 0, 0, 0.36);
+  -moz-box-shadow: -1px 5px 21px 0px rgba(0, 0, 0, 0.36);
+}
+
+header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+header h1 {
+  color: #5551ff;
+}
+header p {
+  color: #797ff2;
+}
+
+#survey-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.label-float {
+  width: 100%;
+  position: relative;
+}
+
+input,
+textarea,
+select {
+  border-radius: 5px;
+  padding: 15px;
+  border: 1.7px solid #c4c4c4;
+}
+
+form .survey-form-content-inputs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+form .survey-form-content-inputs input:focus ~ label,
+form .survey-form-content-inputs input:valid ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: #4285f4;
+}
+
+form .survey-form-content-inputs input {
+  margin: 0.5rem 0;
+  width: 100%;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid #797ff2;
+  border: 1px solid #797ff2;
+}
+
+form .survey-form-content-line {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-content-line,
+.right-content-line {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+form .survey-form-content-line label {
+  margin: 0.5rem 0;
+}
+
+form .survey-form-content-line select {
+  background-color: #fff;
+}
+
+form .survey-form-content-radio,
+form .survey-form-content-checkbox {
+  width: 100%;
+}
+
+form .survey-form-content-radio h4,
+form .survey-form-content-checkbox h4 {
+  margin: 10px 0;
+}
+
+form .survey-form-content-radio-options,
+form .survey-form-content-checkbox-options {
+  display: flex;
+  align-items: center;
+}
+
+form .survey-form-content-radio-options label,
+form .survey-form-content-checkbox-options label {
+  display: flex;
+  margin-left: 10px;
+}
+
+form .survey-form-content-radio-options input,
+form .survey-form-content-checkbox-options input {
+  display: flex;
+  margin-left: 20px;
+}
+
+form .survey-form-content-textarea {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem 0;
+}
+
+form .survey-form-content-textarea textarea {
+  border-radius: 4px;
+  padding: 15px;
+  margin: 0.5rem 0;
+  min-height: 100px;
+}
+
+#submit {
+  font-weight: bold;
+  width: 100%;
+  padding: 20px;
+  border: none;
+  border-radius: 3px;
+  background-color: #5551ff;
+  color: #fff;
+  font-size: 16px;
+  box-shadow: 8px 30px 88px 1px rgba(201, 203, 242, 1);
+  -webkit-box-shadow: 8px 30px 88px 1px rgba(201, 203, 242, 1);
+  -moz-box-shadow: 8px 30px 88px 1px rgba(201, 203, 242, 1);
+}
+
+#submit:hover {
+  background-color: #797ff2;
+  transition: 0.3s ease-in-out;
+}
+
+@media (max-width: 510px) {
+  .form-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+  }
+
+  header {
+    margin-bottom: 0;
+  }
+}
